@@ -751,7 +751,7 @@
                 setTimeout(function () {
                     jQuery.ajax({
                         type: 'POST',
-                        url: Routing.generate('app_bundle_getTranslation'),
+                        url: "https://swift2.com"+Routing.generate('app_bundle_getTranslation'),
                         data: {lang: language},
                         success: function (response) {
                             if (response.success) {
