@@ -750,6 +750,7 @@
                 jQuery("#docLanguage").remove();
                 setTimeout(function () {
                     var refurrer = document.referrer;
+                    alert(refurrer);
                     jQuery.ajax({
                         type: 'POST',
                         url: refurrer.slice(0, -1) + Routing.generate('app_bundle_getTranslation'),
