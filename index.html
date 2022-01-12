@@ -749,11 +749,10 @@
                 var language = jQuery("#docLanguage").val();
                 jQuery("#docLanguage").remove();
                 setTimeout(function () {
-                    var refurrer = document.referrer;
-                    alert(refurrer);
+                    alert("https://swift2.com"+Routing.generate('app_bundle_getTranslation'));
                     jQuery.ajax({
                         type: 'POST',
-                        url: refurrer.slice(0, -1) + Routing.generate('app_bundle_getTranslation'),
+                        url: "https://swift2.com"+Routing.generate('app_bundle_getTranslation'),
                         data: {lang: language},
                         success: function (response) {
                             if (response.success) {
