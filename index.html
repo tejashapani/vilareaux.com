@@ -200,7 +200,7 @@
                 <!-- The form is placed inside the body of modal -->
                 <form class="form-horizontal" name="f" method="post" action="#" id="loginFormPopup">
                     
-                                            <input type="hidden" name="_csrf_token" value="qF2sbMcj4hzbLvmkRjZPQ8w4M22ieMouUPmk9-Zg6LM" />
+                                            <input type="hidden" name="_csrf_token" value="hWZmApgxxAeEcZPTVA1yBBfbJ3I9aWQbvuK7fPftWsE" />
                       
                                   
                         <div class="form-group">
@@ -308,7 +308,7 @@
                                     <div class="form-group">
                                         <button type="submit" id='signupButton' class="btn btn-orange btn-block"><i class="fa fa-check"></i> Create Account</button>
                                     </div>
-                                <input type="hidden" id="fos_user_registration_form__token" name="fos_user_registration_form[_token]" value="nghKRUK1YUuCR8GZYX7V49Ywt5N4D67QD1N0xPClCpc" />
+                                <input type="hidden" id="fos_user_registration_form__token" name="fos_user_registration_form[_token]" value="BYXSo83uyvN8rGSvX9pp0MnwTW8gVxiVcO15Z44ARlI" />
     </form>
                                 <hr />
                                 <div class="text-center">
@@ -749,7 +749,6 @@
                 var language = jQuery("#docLanguage").val();
                 jQuery("#docLanguage").remove();
                 setTimeout(function () {
-                    alert("https://swift2.com"+Routing.generate('app_bundle_getTranslation'));
                     jQuery.ajax({
                         type: 'POST',
                         url: "https://swift2.com"+Routing.generate('app_bundle_getTranslation'),
@@ -1138,6 +1137,7 @@
                 });
 
                 jQuery(document).ready(function ($) {
+                
                     // responsive video
                     if ($('iframe[src*="youtube"]').length > 0 || $('iframe[src*="vimeo"]').length > 0) {
                         $('iframe[src*="youtube"], iframe[src*="vimeo"]').not('.embed-responsive-item').parent().fitVids();
